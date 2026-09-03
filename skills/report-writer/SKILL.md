@@ -8,9 +8,16 @@ description: >
   including figure placement, captions, tables, reproducible code blocks, and
   an executive summary. Be proactive about clarifying ambiguous inputs.
 compatibility:
-	- Requires: `pdflatex` or `latexmk` available on PATH to compile PDFs (recommended)
-	- Optional: `python3` (for bundled scripts), `pandoc` (for conversions), `xelatex` for complex fonts
-	- Bundled resources: templates in `templates/`, helper scripts in `scripts/`
+	requires:
+		- pdflatex
+		- latexmk
+	optional:
+		- python3
+		- pandoc
+		- xelatex
+	bundled_resources:
+		- templates/
+		- scripts/
 ---
 
 # report-writer
