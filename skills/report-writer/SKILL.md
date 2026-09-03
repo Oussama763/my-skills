@@ -8,16 +8,15 @@ description: >
   including figure placement, captions, tables, reproducible code blocks, and
   an executive summary. Be proactive about clarifying ambiguous inputs.
 compatibility:
-	requires:
-		- pdflatex
-		- latexmk
-	optional:
-		- python3
-		- pandoc
-		- xelatex
-	bundled_resources:
-		- templates/
-		- scripts/
+  - pdflatex
+  - latexmk
+optional:
+  - python3
+  - pandoc
+  - xelatex
+bundled_resources:
+  - templates/
+  - scripts/
 ---
 
 # report-writer
