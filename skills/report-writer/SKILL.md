@@ -46,11 +46,26 @@ questions only if the user's intent or required inputs are ambiguous.
 
 If files are missing, request them or accept pasted content inline.
 
-## Output format
+## Output
+
+### Output format
 
 - Primary outputs (always): `report.tex` (LaTeX source) and `report.pdf` (compiled)
 - Also provide: a `build.sh` or `Makefile` showing how the PDF was produced,
 	and a `README.md` with notes on inputs and reproducibility steps.
+
+### Output examples
+Before drafting a report, inspect the reference outputs for syntax and formatting standards:
+- **Report format 1:** `output_examples/example_1/example_1.tex`
+- **Report format 2:** `output_examples/example_2/example_2.tex`
+
+Use these example `.tex` files as ground truth for preamble setup, `babel` (French) configuration, and custom colors.
+
+### Output File Management
+- **Target Path:** Save generated `.tex` files directly into the user's working directory or a project-level folder specified by the user (e.g., `./reports/` or `./build/`).
+- **Do Not Write to Skill Folder:** Never save generated user reports inside `skills/report-writer/`.
+- **Compilation Execution:** Run the build script targeting the user's chosen folder:
+  `python skills/report-writer/scripts/build_pdf.py ./reports/summary.tex --outdir ./reports/`
 
 ## Report structure (enforced template)
 
