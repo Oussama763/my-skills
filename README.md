@@ -22,4 +22,18 @@ npx skills add Oussama763/my-skills
 
 5. Finish the installation
 
+## 🛠️ Help Wanted / Upcoming Tasks (for the `report-writer` skill)
+
+Your help will be appreciated with any task, I suggest the following:
+
+1. Help me fill the `output_examples` directory with specific types of reports, specific designs (not just example_1, example_2) the examples should be clear and precis so that the agent can identify exactly which example to look at for a task.
+
+2. You can improve `SKILL.md` file.
+
+3. You can try the skill on multiple edges cases and give feedback.
+
+4. You can help with your own latex templates to enrich the repo and give the user more options.
+
+5. If you make any changes in your contribution please add when to use it in the `SKILL.md` file.
+
 
