@@ -30,7 +30,7 @@ Your help will be appreciated with any task, I suggest the following:
 
 2. You can improve `SKILL.md` file.
 
-3. You can try the skill on multiple edges cases and give feedback.
+3. You can try the skill on multiple edge cases and give feedback.
 
 4. You can help with your own latex templates to enrich the repo and give the user more options.
 
