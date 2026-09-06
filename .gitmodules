@@ -1,0 +1,3 @@
+[submodule "skills/report-writer/cpgekit"]
+	path = skills/report-writer/cpgekit
+	url = git@github.com:texbouja/cpgekit.git
