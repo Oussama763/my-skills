@@ -39,3 +39,8 @@ Your help will be appreciated with any task, I suggest the following:
 6. I want to work on the reflection/self correction loop, you can help with that.
 
 7. You can inspect the embedded repo (cpgekit) and add references of the usage of each file in the SKILL.md file.
+
+
+## Credits
+
+This project use an embedded repo `cpgekit` that forked from the original `cpgekit` by `texbouja`.
