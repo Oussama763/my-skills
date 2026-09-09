@@ -10,13 +10,13 @@ description: >
 compatibility:
   - pdflatex
   - latexmk
-optional:
   - python3
   - pandoc
   - xelatex
 bundled_resources:
   - templates/
   - scripts/
+  - cpgekit/
 ---
 
 # report-writer
@@ -55,6 +55,7 @@ If files are missing, request them or accept pasted content inline.
 	and a `README.md` with notes on inputs and reproducibility steps.
 
 ### Output examples
+
 Before drafting a report, inspect the reference outputs for syntax and formatting standards:
 - **Report format 1:** `output_examples/example_1/example_1.tex`
 - **Report format 2:** `output_examples/example_2/example_2.tex`
@@ -62,6 +63,7 @@ Before drafting a report, inspect the reference outputs for syntax and formattin
 Use these example `.tex` files as ground truth for preamble setup, `babel` (French) configuration, and custom colors.
 
 ### Output File Management
+
 - **Target Path:** Save generated `.tex` files directly into the user's working directory or a project-level folder specified by the user (e.g., `./reports/` or `./build/`).
 - **Do Not Write to Skill Folder:** Never save generated user reports inside `skills/report-writer/`.
 - **Compilation Execution:** Run the build script targeting the user's chosen folder:
@@ -97,6 +99,11 @@ Section-level guidance:
 - For code blocks: format as a verbatim or minted listing; mention the
 	language and required runtime (e.g., Python 3.10). When a script generated a
 	figure, annotate the figure caption with the script name.
+
+## Style and colors
+
+- For more elaborate styling and color palettes use the embedded repo `cpgekit`.
+- To use `cpgekit` refer to `cpgekit/README.md` file.
 
 ## Behavior and heuristics
 
