@@ -43,4 +43,4 @@ Your help will be appreciated with any task, I suggest the following:
 
 ## Credits
 
-This project uses an embedded repo `cpgekit` that forked from the original `cpgekit` by `texbouja`.
+This project uses an embedded repo `cpgekit` that I forked from the original `cpgekit` by `texbouja`.
