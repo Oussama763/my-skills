@@ -43,4 +43,4 @@ Your help will be appreciated with any task, I suggest the following:
 
 ## Credits
 
-This project uses an embedded repo `cpgekit` that I forked from the original `cpgekit` by `texbouja`.
+The `report-writer` skill uses an embedded repo `cpgekit` that I forked from the original `cpgekit` by [texbouja](https://github.com/texbouja).
