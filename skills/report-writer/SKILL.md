@@ -102,8 +102,80 @@ Section-level guidance:
 
 ## Style and colors
 
-- For more elaborate styling and color palettes use the embedded repo `cpgekit`.
-- To use `cpgekit` refer to `cpgekit/README.md` file.
+Use the bundled `cpgekit` when the user wants exam-sheet, classroom, or polished French academic styling rather than a generic business template. The cpgekit package is designed for CPGE-style documents and is already included in this workspace under `skills/report-writer/cpgekit/`.
+
+### Preferred workflow
+
+- Start with the class `cpgedev` for CPGE-oriented LaTeX documents.
+- Put all layout/theme commands in the preamble, immediately after `\documentclass`.
+- Use `\cpgegeometry` to choose a page format and margins.
+- Use `\cpgetheme` to select a visual theme and optional palette.
+
+### Common geometry presets
+
+`cpgekit` exposes layout presets through `\cpgegeometry`:
+
+- `print` : A4 portrait
+- `2print` : A4 portrait, 2 columns
+- `lsprint` : A4 landscape, 2 columns
+- `tablet` : tablet-oriented layout
+- `phone` : mobile layout for phones
+- `altphone` : alternate mobile layout
+
+Example:
+
+```latex
+\documentclass[]{cpgedev}
+\cpgegeometry[hmargin=1cm]{tablet}
+```
+
+The optional argument is used for extra geometry adjustments such as `hmargin=1cm`, while the mandatory argument selects the preset layout.
+
+### Theme and palette usage
+
+Pick a theme with `\cpgetheme` and optionally choose a palette:
+
+```latex
+\cpgetheme{curve}
+\cpgetheme[palette=cosmic,dark]{curve}
+```
+
+Available palettes include:
+
+- `nord`
+- `gruv`
+- `material`
+- `forest`
+- `cosmic`
+
+The `dark` option toggles dark mode when the selected layout supports it. Dark mode is mainly useful for screen-oriented formats such as `tablet` or `phone`; it is ignored for print-oriented geometries.
+
+### Recommended usage patterns
+
+- For screen-focused documents: use `tablet` or `phone` and a light/dark palette.
+- For print-ready documents: prefer `print` or `2print` and keep the palette subtle.
+- For intermediate drafts: use `draft` mode and a lighter theme to speed compilation.
+- For “polished” academic documents: start from `curve` and adjust the palette to fit the audience.
+
+### Example from the bundled project
+
+The repo already contains a working example in `skills/report-writer/cpgekit/misc/test.tex`:
+
+```latex
+\documentclass[]{cpgedev}
+\cpgegeometry[hmargin=1cm]{tablet}
+\cpgetheme[palette=cosmic,dark]{curve}
+```
+
+This is the preferred pattern for using cpgekit in this project: set the geometry, select the theme, then define the document metadata and content.
+
+### References in this repo
+
+- `skills/report-writer/cpgekit/README.md`
+- `skills/report-writer/cpgekit/docs/Manuel.md`
+- `skills/report-writer/cpgekit/misc/test.tex`
+
+When asked to create a report with more elaborate styling and color palette, prefer the cpgekit styling workflow above instead of raw generic LaTeX styling.
 
 ## Behavior and heuristics
 
